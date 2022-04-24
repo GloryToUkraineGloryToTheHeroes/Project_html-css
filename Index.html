@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wellfleet&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <meta name="viewport" content="width=device-width" , initial-scale=1>
+
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#081afe">
+    <meta name="theme-color" content="#081afe">
+
+    <meta name="google" content="notranslate" />
+    <title>Snow Forest</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <svg style="display: none;">
+            <symbol id="wiki" viewBox="0 0 128.000000 128.000000">
+                <g transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)" stroke="none">
+                    <path d="M80 951 c0 -14 10 -20 42 -24 24 -3 51 -15 65 -29 13 -13 76 -149
+142 -303 95 -224 122 -280 137 -280 14 0 38 35 89 127 38 70 73 124 77 120 3
+-4 30 -62 58 -129 37 -87 57 -123 68 -123 12 0 67 91 176 291 88 160 171 299
+184 310 14 10 38 19 53 19 22 0 29 5 29 20 0 19 -7 20 -115 20 -96 0 -115 -3
+-115 -15 0 -9 9 -15 24 -15 25 0 56 -23 56 -41 0 -10 -221 -424 -246 -462 -10
+-15 -19 -1 -63 104 -28 67 -51 128 -51 135 0 25 100 198 131 227 18 17 40 27
+59 27 23 0 30 4 30 20 0 19 -7 20 -115 20 -96 0 -115 -3 -115 -15 0 -9 9 -15
+24 -15 14 0 31 -9 40 -21 14 -20 12 -27 -19 -88 -59 -116 -57 -116 -94 -23
+-38 93 -37 116 2 120 19 2 27 9 27 23 0 18 -8 19 -141 19 -127 0 -140 -2 -137
+-17 2 -10 16 -20 35 -24 62 -12 77 -31 137 -174 l57 -136 -53 -99 c-29 -55
+-56 -96 -59 -92 -19 20 -198 473 -193 486 4 10 18 16 35 16 22 0 29 5 29 20 0
+19 -7 20 -145 20 -135 0 -145 -1 -145 -19z"/>
+                </g>
+            </symbol>
+
+            <symbol id="google" viewBox="0 0 128.000000 128.000000">
+                <g transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)" stroke="none">
+                    <path d="M520 1265 c-232 -52 -431 -247 -484 -475 -20 -83 -20 -217 0 -300 41
+-175 172 -340 334 -419 139 -68 273 -86 414 -56 273 58 476 316 476 607 l0 78
+-270 0 -270 0 0 -80 0 -80 189 0 189 0 -14 -47 c-8 -26 -24 -68 -36 -93 -31
+-65 -135 -165 -203 -196 -307 -141 -665 94 -665 436 0 368 418 606 715 407 22
+-15 52 -37 68 -49 l28 -22 56 57 57 56 -39 35 c-146 127 -361 183 -545 141z"/>
+                </g>
+            </symbol>
+    </svg> <!--sprite-->
+
+    <div class="header" id="header">
+        <div class="container">
+            <div class="header_inner" id="header_inner">
+                <div class="header_logo">trol</div>
+                
+                <nav class="nav" id="nav">
+                    <a href="#" class="nav_link" data-scroll="#features">features</a>
+                    <a href="#" class="nav_link" data-scroll="#works">works</a>
+                    <a href="#" class="nav_link" data-scroll="#team">our team</a>
+                    <a href="#" class="nav_link" data-scroll="#reviews">reviews</a>
+                    <a href="#" class="nav_link" data-scroll="#download">download</a>
+                </nav>
+
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger_item">Menu</span>
+                </button>
+            </div>
+        </div>
+    </div> <!--head-->
+
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro_inner">
+                <h1 class="intro_subtitle">wonderful</h1>
+                <h2 class="intro_title">snow forest</h2>
+
+                <a class="btn">learn more</a>
+            </div>
+        </div>
+    </div> <!--intro-->
+
+    <div class="container" id="features">
+        <div class="features">
+            <div class="features_item">
+                <img class="features_icon" src="assets\icons\icon 1.1.png" alt="">
+                <h4 class="features_title">tree</h4>
+                <div class="features_text">
+                    life form of woody plants with a single, clearly expressed, perennial, woody to varying degrees, persisting throughout life, branched (except for palms) main axis - the trunk
+                </div>
+            </div>
+
+            <div class="features_item">
+                <img class="features_icon" src="assets\icons\icon 2.png" alt="">
+                <h4 class="features_title">snow</h4>
+                <div class="features_text">
+                    a form of precipitation consisting of small ice crystals. Refers to overburden precipitation falling on the earth's surface
+                </div>
+            </div>
+
+            <div class="features_item">
+                <img class="features_icon" src="assets\icons\icon 3.png" alt="">
+                <h4 class="features_title">ground</h4>
+                <div class="features_text">
+                    a natural body formed as a result of the transformation of the surface layers of the Earth's land under the joint influence of soil formation factors
+                </div>
+            </div>
+
+            <div class="features_item">
+                <img class="features_icon" src="assets\icons\icon 4.png" alt="">
+                <h4 class="features_title">animals</h4>
+                <div class="features_text">
+                    traditionally distinguished category of organisms, currently considered as a biological kingdom. Animals are the main object of the study of zoology
+                </div>
+            </div>
+
+            <div class="features_item">
+                <img class="features_icon" src="assets\icons\icon 5.5.png" alt="">
+                <h4 class="features_title">insects</h4>
+                <div class="features_text">
+                    class of invertebrates arthropods. According to the traditional classification, together with millipedes, they belong to the subtype of trachea breathing
+                </div>
+            </div>
+
+            <div class="features_item">
+                <img class="features_icon" src="assets\icons\icon 6.png" alt="">
+                <h4 class="features_title">temperature</h4>
+                <div class="features_text">
+                    physical quantity characterizing a thermodynamic system and quantitatively expressing the intuitive concept of different degrees of heating of bodies
+                </div>
+            </div>
+            
+        </div>
+    </div> <!--features-->
+
+    <div class="works" id="works">
+        <div class="works_item">
+            <img class="works_photo" src="assets\works\work 1.jpg" alt="">
+            <div class="works_content">
+                <div class="works_title">Project name</div>
+                <div class="works_text">User Interface Design</div>
+            </div>
+        </div>
+
+        <div class="works_item">
+            <img class="works_photo" src="assets\works\work 2.2.jpg" alt="">
+            <div class="works_content">
+                <div class="works_title">Project name</div>
+                <div class="works_text">User Interface Design</div>
+            </div>
+        </div>
+
+        <div class="works_item">
+            <img class="works_photo" src="assets\works\work 3.jpg" alt="">
+            <div class="works_content">
+                <div class="works_title">Project name</div>
+                <div class="works_text">User Interface Design</div>
+            </div>
+        </div>
+
+        <div class="works_item">
+            <img class="works_photo" src="assets\works\work 4.jpg" alt="">
+            <div class="works_content">
+                <div class="works_title">Project name</div>
+                <div class="works_text">User Interface Design</div>
+            </div>
+        </div>
+
+        <div class="works_item">
+            <img class="works_photo" src="assets\works\work 5.jpg" alt="">
+            <div class="works_content">
+                <div class="works_title">Project name</div>
+                <div class="works_text">User Interface Design</div>
+            </div>
+        </div>
+
+        <div class="works_item">
+            <img class="works_photo" src="assets\works\work 6.jpg" alt="">
+            <div class="works_content">
+                <div class="works_title">Project name</div>
+                <div class="works_text">User Interface Design</div>
+            </div>
+        </div>
+
+        <div class="works_item">
+            <img class="works_photo" src="assets\works\work 7.jpg" alt="">
+            <div class="works_content">
+                <div class="works_title">Project name</div>
+                <div class="works_text">User Interface Design</div>
+            </div>
+        </div>
+
+        <div class="works_item">
+            <img class="works_photo" src="assets\works\work 8.8.jpg" alt="">
+            <div class="works_content">
+                <div class="works_title">Project name</div>
+                <div class="works_text">User Interface Design</div>
+            </div>
+        </div>
+    </div> <!--works-->
+
+    <div class="team" id="team">
+        <div class="container">
+            <div class="team_inner">
+                <div class="team_item">
+                    <img class="team_photo" src="assets\team_photos\team 1.jpeg" alt="">
+                    <div class="team_name">Squirrel</div>
+                    <div class="team_prof">Rodent</div>
+                    <div class="team_text">Runs in trees, eats nuts. Builds houses and lives in tree hollows</div>
+                    <div class="social">
+                        <a class="social_item" href="#" target="_blank">
+                            <svg class="social_icon">
+                                <use xlink:href="#wiki"></use>
+                            </svg>
+                        </a>
+                        <a class="social_item" href="#" target="_blank">
+                            <svg class="social_icon">
+                                <use xlink:href="#google"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team_item">
+                    <img class="team_photo" src="assets\team_photos\team 2.jpg" alt="">
+                    <div class="team_name">Wolf</div>
+                    <div class="team_prof">Predator</div>
+                    <div class="team_text">Lives and hunts in a pack. considered a forest keeper</div>
+                    <div class="social">
+                        <a class="social_item" href="#" target="_blank">
+                            <svg class="social_icon">
+                                <use xlink:href="#wiki"></use>
+                            </svg>
+                        </a>
+                        <a class="social_item" href="#" target="_blank">
+                            <svg class="social_icon">
+                                <use xlink:href="#google"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team_item">
+                    <img class="team_photo" src="assets\team_photos\team 3.jpg" alt="">
+                    <div class="team_name">Fox</div>
+                    <div class="team_prof">Predator</div>
+                    <div class="team_text">Hunts small animals, builds burrows underground</div>
+                    <div class="social">
+                        <a class="social_item" href="#" target="_blank">
+                            <svg class="social_icon">
+                                <use xlink:href="#wiki"></use>
+                            </svg>
+                        </a>
+                        <a class="social_item" href="#" target="_blank">
+                            <svg class="social_icon">
+                                <use xlink:href="#google"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team_item">
+                    <img class="team_photo" src="assets\team_photos\team 4.jpg" alt="">
+                    <div class="team_name">Boar</div>
+                    <div class="team_prof">Herbivore</div>
+                    <div class="team_text">Eats grass and acorns, falls into hibernation</div>
+                    <div class="social">
+                        <a class="social_item" href="#" target="_blank">
+                            <svg class="social_icon">
+                                <use xlink:href="#wiki"></use>
+                            </svg>
+                        </a>
+                        <a class="social_item" href="#" target="_blank">
+                            <svg class="social_icon">
+                                <use xlink:href="#google"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!--team-->
+
+    <div class="reviews" id="reviews">
+        <div class="container">
+            <div class="reviews_slider" id="reviewsSlider">
+                <div class="slider_item">
+                    <div class="reviews_item">
+                        <div class="review_photo">
+                            <img class="review_img" src="assets\reviews\review 1.jpg" alt="">
+                        </div>
+                        <div class="review_content">
+                            <div class="review_text">Cold in winter and little food. Have to change into a winter coat</div>
+                            <div class="review_author">Rabbit</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_item">
+                    <div class="reviews_item">
+                        <div class="review_photo">
+                            <img class="review_img" src="assets\reviews\review 2.jpg" alt="">
+                        </div>
+                        <div class="review_content">
+                            <div class="review_text">It's hard to run in the snow and look for something to eat</div>
+                            <div class="review_author">roe deer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!--reviews-->
+
+    <div class="download" id="download">
+        <div class="container">
+            <h3 class="download_title">Are you ready to start? Download now for free!</h3>
+            <div class="download_text">
+                <p>winter forest are waiting for you</p>
+            </div>
+            <a href="#" class="btn_download">Download here</a>
+        </div>
+    </div> <!--download-->
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer_inner">
+                <div class="footer_item">
+                    <h4 class="footer_item_title">Location</h4>
+                    <address class="footer_address">
+                        <p>forest</p>
+                        <p>all forests of the world</p>
+                    </address>
+                </div>
+
+                <div class="footer_item">
+                    <h4 class="footer_item_title">Share With Love</h4>
+                    <div class="footer_social">
+                            <a class="social_item item--footer" href="#" target="_blank">
+                                <svg class="social_icon">
+                                    <use xlink:href="#wiki"></use>
+                               </svg>
+                           </a>
+                           <a class="social_item  item--footer" href="#" target="_blank">
+                               <svg class="social_icon">
+                                   <use xlink:href="#google"></use>
+                               </svg>
+                           </a>
+                    </div>
+                </div>
+
+                <div class="footer_item">
+                    <h4 class="footer_item_title">About forest</h4>
+                    <div class="footer_text">
+                        <p>Forest is a place of congestion of trees</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright_text">
+                    <div>Copyrights 2021 Snow Forest. All rights reserved</div>
+                    <div>Made with Y  <span> by Daniel Craig</span></div>
+                </div>
+            </div>
+        </div>
+    </div> <!--footer-->
+
+
+    <!--javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="C:\Users\coman\Project 1\app.js"></script>
+</body>
+</html>
